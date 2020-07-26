@@ -2,15 +2,14 @@ import sys
 from NumberSystem import *
 def encode(string):
     binary = strToBinary(string)
-    #print('string in binary:', binary)
     binary = padZeros(binary, 6)
     base64 = binaryStrToBase64(binary)
-    if(len(string)%3 == 2):
-        base64 += '='
-    elif(len(string)%3 == 1):
-        base64 += '=='
-    return base64
+    return addPadding(base64)
 
+def addPadding(base64):
+    while(len(base64)%3 is not 0):
+        base64 += '='
+    return base64
 
 def binaryStrToBase64(binary_str):
     i = 0
@@ -19,8 +18,6 @@ def binaryStrToBase64(binary_str):
         section = binary_str[i:i+6]
         base64 += binaryDigitToBase64(section)
         i+=6
-#    equals_signs = len(binary_str) - equals_sign
-#    for i in range(len(binary_str - ))
     return base64
 
 def binaryDigitToBase64(section):
