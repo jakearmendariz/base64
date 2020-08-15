@@ -1,0 +1,32 @@
+
+//5 runs
+// Rust 
+// real    0m0.120s
+// user    0m0.118s
+// sys     0m0.002s
+
+// Python
+// real    0m0.210s
+// user    0m0.190s
+// sys     0m0.021s
+
+//30 runs
+//Rust
+// real    0m27.784s
+// user    0m27.741s
+// sys     0m0.042s
+
+//python
+// real    0m45.248s
+// user    0m45.213s
+// sys     0m0.031s
+
+//35
+//rust
+// real    1m45.910s
+// user    1m45.818s
+// sys     0m0.091s
+
+// real    3m6.764s
+// user    3m6.640s
+// sys     0m0.082s
