@@ -1,6 +1,6 @@
 use std::env;
 mod library;
-const NUM_TRIALS:u8 = 20;
+const NUM_TRIALS:u8 = 5;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
